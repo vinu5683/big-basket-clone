@@ -1,0 +1,85 @@
+
+Items.json
+//TODO every item have these many fields.
+
+{
+	"Product": [{
+		"id": 1,
+		"images": [
+			"a",
+			"b"
+		],
+		"title": "title",
+		"category": "",
+		"subCategory": "",
+		"isOrganic": true,
+		"price": 1.23,
+		"attribute": "attribute",
+		"discount": "",
+		"offer": 10,
+		"isVeg": true,
+		"suggestedItemsTag": "",
+		"aboutProduct": "",
+		"storageAndUses": "",
+		"isAvailable": true
+	}]
+}
+
+Reviews.json
+//TODO Item reviews stored here. created only if any user gives a rating or/and review
+{
+	"Review": [{
+		"userName": "",
+		"userId": 0,
+		"itemId": 0,
+		"rated": 0,
+		"review": ""
+	}]
+}
+
+Users.json
+//TODO user details, every user have these many fields
+{
+	"User": [{
+		"userId": 0,
+		"userName": "",
+		"userImage": "",
+		"userEmail": "",
+		"userPassword": "",
+		"userPhoneNumber": "",
+		"address": [{
+			"address": "",
+			"state": "",
+			"city": "",
+			"pinCode": ""
+		}],
+		"cart": [{
+			"itemId": 0,
+			"quantity": 0,
+			"price": 1.23,
+			"isAvailable": false
+		}]
+	}]
+}
+
+Orders.json
+//TODO orders of users
+{
+  "orders": [
+    {
+      "userId": 0,
+      "totalPrice": 1.25,
+      "orderDate": "2021-02-02T15:32:09.366Z",
+      "items": [
+        {
+          "itemId": 0,
+          "quantity": 0,
+          "price": 1.23
+        }
+      ],
+      "address": "",
+      "isDelivered": false,
+      "deliveryDate": "2021-02-02T15:32:09.366Z"
+    }
+  ]
+}
