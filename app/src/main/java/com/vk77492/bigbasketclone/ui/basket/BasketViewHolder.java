@@ -13,7 +13,6 @@ import com.vk77492.bigbasketclone.R;
 public class BasketViewHolder extends RecyclerView.ViewHolder {
 
     private ImageView mIvProductImage;
-    private TextView mTvTotalItems;
     private TextView mTvProductName;
     private TextView mTvPrductWight;
     private TextView mTvProductPrice;
@@ -34,7 +33,6 @@ public class BasketViewHolder extends RecyclerView.ViewHolder {
         mTvPrductWight= itemView.findViewById(R.id.tvProductWight);
         mTvProductName= itemView.findViewById(R.id.tvProductName);
         mTvProductPrice= itemView.findViewById(R.id.tvProductPrice);
-        mTvTotalItems= itemView.findViewById(R.id.tvTotalItems);
     }
     public void setData(BasketViewModel basketViewModel) {
         Glide.with(mIvProductImage).load(basketViewModel.getUrl()).into(mIvProductImage);

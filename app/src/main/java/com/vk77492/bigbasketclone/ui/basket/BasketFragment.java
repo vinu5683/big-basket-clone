@@ -50,9 +50,11 @@ public class BasketFragment extends Fragment {
 
     private void builRecyclerData() {
         basketModelClassList = new ArrayList<>();
-        for(int i= 100; i<1; i++){
+        basketModelClassList.add(new BasketViewModel());
+        basketModelClassList.add(new BasketViewModel());
+        basketModelClassList.add(new BasketViewModel());
+        basketModelClassList.add(new BasketViewModel());
+        basketModelClassList.add(new BasketViewModel());
 
-
-        }
     }
 }
