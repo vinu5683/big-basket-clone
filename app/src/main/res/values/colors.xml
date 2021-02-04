@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="big_basket_official">#54D804</color>
     <color name="big_basket_official_dark">#43AE03</color>
+    <color name="background_color_official">#E2E2E2</color>
 </resources>

@@ -1,0 +1,85 @@
+{
+  "Product": [{
+    "id": 1,
+    "images": [
+      "https://www.bigbasket.com/media/uploads/p/l/10000298_10-fresho-banganapalli-mango.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/10000298-2_1-fresho-banganapalli-mango.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/10000298-3_1-fresho-banganapalli-mango.jpg"
+    ],
+    "title": "Banganapalli Mango",
+    "category": "Furits",
+    "subCategory": "Mango",
+    "isOrganic": true,
+    "price": 239.0,
+    "attribute": "1 Kg",
+    "discount": "20% OFF",
+    "offer": 20,
+    "isVeg": true,
+    "suggestedItemsTag": "Furits",
+    "aboutProduct": "Banganpalli are sourced from Andhra Pradesh and known for their unique sweet and rich taste. They are moderately juicy and aromatic with a maize-yellow colour.",
+    "storageAndUses": "These mangoes can either be eaten on their own or pureed to make juices and shakes. They make a perfect dessert as they can be sliced and served with ice-creams and a variety of other desserts too.",
+    "isAvailable": true
+  },
+    {
+      "id": 2,
+      "images": [
+        "https://www.bigbasket.com/media/uploads/p/l/40114961_3-fresho-papaya-small.jpg",
+        "https://www.bigbasket.com/media/uploads/p/l/40114961-2_4-fresho-papaya-small.jpg",
+        "https://www.bigbasket.com/media/uploads/p/l/40114961-3_4-fresho-papaya-small.jpg"
+      ],
+      "title": "Papaya - Small",
+      "category": "Furits",
+      "subCategory": "Papaya",
+      "isOrganic": true,
+      "price": 30.0,
+      "attribute": "1 pc",
+      "discount": "20% OFF",
+      "offer": 20,
+      "isVeg": true,
+      "suggestedItemsTag": "Furits",
+      "aboutProduct": "Papayas grow in tropical climates and are also known as papaws or pawpaws. Initially green and somewhat bitter in taste, papayas are butter-yellow when fully ripe and shaped like a pear. Their pale-orange flesh has dozens of small, black, sticky seeds at the center, similar to a melon.",
+      "storageAndUses": "Raw papaya salad is one of the most popular dishes not just in Southeast Asia but across the globe too. The julienned flesh tossed with lemon juice, chillies, peanuts and fresh herbs provide a delicious medley of flavours, and it makes a great option for a refreshing and light lunch.",
+      "isAvailable": true
+    },
+    {
+      "id": 3,
+      "images": [
+        "https://www.bigbasket.com/media/uploads/p/l/10000069_20-fresho-capsicum-green.jpg",
+        "https://www.bigbasket.com/media/uploads/p/l/10000069-2_28-fresho-capsicum-green.jpg",
+        "https://www.bigbasket.com/media/uploads/p/l/10000069-4_2-fresho-capsicum-green.jpg"
+      ],
+      "title": "Capsicum Hybrid Green",
+      "category": "Vegetables",
+      "subCategory": "Capsicum",
+      "isOrganic": false,
+      "price": 17.50,
+      "attribute": "1 Kg",
+      "discount": "36% OFF",
+      "offer": 36,
+      "isVeg": true,
+      "suggestedItemsTag": "Vegetables",
+      "aboutProduct": "Leaving a moderately pungent taste on the tongue, Green capsicums, also known as green peppers are bell shaped, medium-sized fruit pods. They have thick and shiny skin with a fleshy texture inside.",
+      "storageAndUses": "Store them in a cool, dry place away from direct sunlight. Keep capsicums dry as moisture makes them rot faster. Refrigerate the peppers unwashed, in a plastic bag and consume within a week. Resort to refrigeration only when they cannot be consumed immediately.",
+      "isAvailable": true
+    },
+    {
+      "id": 4,
+      "images": [
+        "https://www.bigbasket.com/media/uploads/p/l/10000271_13-fresho-carrot-ooty.jpg",
+        "https://www.bigbasket.com/media/uploads/p/l/10000271-3_1-fresho-carrot-ooty.jpg"
+      ],
+      "title": "Carrot/Gajar(Lal)",
+      "category": "Vegetables",
+      "subCategory": "Carrot",
+      "isOrganic": true,
+      "price": 38.0,
+      "attribute": "500 g",
+      "discount": "30% OFF",
+      "offer": 30,
+      "isVeg": true,
+      "suggestedItemsTag": "Vegetables",
+      "aboutProduct": "A popular sweet-tasting root vegetable, Carrots are narrow and cone shaped. They have thick, fleshy, deeply colored root, which grows underground, and feathery green leaves that emerge above the ground. While these greens are fresh tasting and slightly bitter, the carrot roots are crunchy textured with a sweet and minty aromatic taste. Fresho brings you the flavour and richness of the finest bright orange, crispy and juicy carrots.",
+      "storageAndUses": "Refrigerate carrots in a mesh bag. Alternatively to retain freshness and for more longevity, trim off the greens and put whole carrots in a container of water and refrigerate. With this method, they stay nice and crunchy. If the water starts to look cloudy, change it with fresh water. Stored this way, carrots can last for even a month with no ill effects and dont wilt easily.",
+      "isAvailable": true
+    }]
+}

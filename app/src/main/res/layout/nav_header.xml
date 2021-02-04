@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/menu_item_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_effect">
+
+        <TextView
+            android:id="@+id/tvHome"
+            style="@style/headerTextStyle"
+            android:text="Home" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_effect">
+
+        <TextView
+            android:id="@+id/tvMyAccount"
+            style="@style/headerTextStyle"
+            android:text="My Account"
+            app:drawableEndCompat="@drawable/ic_baseline_chevron_right_24" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/myAccountChild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect">
+
+            <TextView
+                style="@style/headerTextStyle"
+                android:text="My Order" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect">
+
+            <TextView
+                style="@style/headerTextStyle"
+                android:text="My Wallet"
+                 />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect">
+
+            <TextView
+                style="@style/headerTextStyle"
+                android:text="My Rating &amp; Reviews"
+                 />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect">
+
+            <TextView
+                style="@style/headerTextStyle"
+
+                android:text="My Profile"
+                 />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/menu_item_smartbasket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_effect">
+
+        <TextView
+
+            android:text="Smart Basket/My List"
+            style="@style/headerTextStyle"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/menu_item_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_effect">
+
+        <TextView
+            android:id="@+id/tvMenuCategory"
+            android:text="Shop By Category"
+            style="@style/headerTextStyle"
+            app:drawableEndCompat="@drawable/ic_baseline_chevron_right_24" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/categoryChild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect">
+
+            <TextView
+                style="@style/headerTextStyle"
+
+                android:text="Fruits &amp; Vegetables"
+                 />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect">
+
+            <TextView
+
+                android:text="Food grains, Oil &amp; Masala"
+                style="@style/headerTextStyle"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect">
+
+            <TextView
+
+                android:text="Bakery, Cakes"
+                style="@style/headerTextStyle"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect">
+
+            <TextView
+                style="@style/headerTextStyle"
+                android:text="Beverages"
+                />
+            >
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect">
+
+            <TextView
+                style="@style/headerTextStyle"
+                android:text="Snacks &amp; Branded foods"
+                 />
+            >
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect">
+
+            <TextView
+                style="@style/headerTextStyle"
+                android:text="Beauty &amp; Hygiene"
+                />
+            >
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect">
+
+            <TextView
+
+                android:text="Cleaning &amp; Household"
+                style="@style/headerTextStyle"
+                />
+            >
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect">
+
+            <TextView
+                style="@style/headerTextStyle"
+                android:text="Kitchen, Garden &amp; Pets"
+                 />
+            >
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect">
+
+            <TextView
+                style="@style/headerTextStyle"
+                android:text="Eggs, Meat &amp; Fish"
+                 />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect">
+
+            <TextView
+                style="@style/headerTextStyle"
+                android:text="Gourmet &amp; World Food"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect">
+
+            <TextView
+                android:text="Baby Care"
+                style="@style/headerTextStyle"
+                />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
