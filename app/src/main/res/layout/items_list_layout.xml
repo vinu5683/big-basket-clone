@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent">
+
+                <ImageView
+                    android:id="@+id/ivRvListImage"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/babycare" />
+
+                <TextView
+                    android:id="@+id/tvRvListOffer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/offer_home_rv_tag"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="2dp"
+                    android:text="20% OFF"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Fresho"
+            android:textAllCaps="true"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/cv1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvProdName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Mangoes"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cv1"
+            app:layout_constraintTop_toBottomOf="@id/tvBrand" />
+
+        <TextView
+            android:id="@+id/tvProductQuantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_textview"
+            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+            android:gravity="center|start"
+            android:paddingStart="10dp"
+            android:text="1 Kg"
+            android:textColor="#444444"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cv1"
+            app:layout_constraintTop_toBottomOf="@id/tvProdName" />
+
+        <TextView
+            android:id="@+id/tvProdPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="175"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/cv1"
+            app:layout_constraintTop_toBottomOf="@id/tvProductQuantity" />
+
+        <TextView
+            android:id="@+id/tvProdPriceMRP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:text="175"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/tvProdPrice"
+            app:layout_constraintTop_toBottomOf="@id/tvProductQuantity" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:background="@drawable/btn_add_bg_home"
+            android:textColor="@color/white"
+            android:foreground="@drawable/ripple_effect"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvProdPriceMRP" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

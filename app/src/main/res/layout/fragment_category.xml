@@ -4,20 +4,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/background_color_official"
     android:layout_height="match_parent"
     tools:context=".ui.category.CategoriesFragment" >
 
-    <TextView
-        android:id="@+id/text_dashboard"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="match_parent">
+
+        <ExpandableListView
+            android:id="@+id/expandableListView"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layoutDirection="rtl"
+            android:dividerHeight="0.5dp"
+            android:indicatorRight="?android:attr/expandableListPreferredItemIndicatorRight"
+            android:divider="#A4C739"
+             />
+
+    </RelativeLayout></androidx.constraintlayout.widget.ConstraintLayout>
