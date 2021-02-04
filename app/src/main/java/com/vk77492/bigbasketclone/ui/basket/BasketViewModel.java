@@ -16,4 +16,8 @@ public class BasketViewModel extends ViewModel {
     public LiveData<String> getText() {
         return mText;
     }
+
+    public String getUrl() {
+        return null;
+    }
 }

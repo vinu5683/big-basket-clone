@@ -7,6 +7,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.vk77492.bigbasketclone.R;
 
 public class BasketViewHolder extends RecyclerView.ViewHolder {
@@ -35,6 +36,8 @@ public class BasketViewHolder extends RecyclerView.ViewHolder {
         mTvProductPrice= itemView.findViewById(R.id.tvProductPrice);
         mTvTotalItems= itemView.findViewById(R.id.tvTotalItems);
     }
-    public void setData(BasketViewModel basketModelClass) {
+    public void setData(BasketViewModel basketViewModel) {
+        Glide.with(mIvProductImage).load(basketViewModel.getUrl()).into(mIvProductImage);
     }
+
 }
