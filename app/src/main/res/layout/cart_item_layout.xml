@@ -2,7 +2,8 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -14,7 +15,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:elevation="10dp"
             app:cardCornerRadius="10dp"
             app:cardElevation="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -27,17 +27,17 @@
                 android:background="@android:color/transparent">
 
                 <ImageView
-                    android:id="@+id/ivRvListImage"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:id="@+id/ivRvCartListImage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/babycare" />
 
                 <TextView
-                    android:id="@+id/tvRvListOffer"
+                    android:id="@+id/tvRvCartListOffer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/offer_home_rv_tag"
+                    android:background="@drawable/saving_tag_cart"
                     android:paddingStart="10dp"
                     android:paddingEnd="10dp"
                     android:paddingBottom="2dp"
@@ -60,71 +60,104 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingEnd="5dp"
+            app:drawableStartCompat="@drawable/ic_baseline_electric_bike_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
             android:id="@+id/tvProdName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:text="Mangoes"
-            android:textColor="@color/black"
+            android:textColor="#444444"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/cv1"
             app:layout_constraintTop_toBottomOf="@id/tvBrand" />
 
         <TextView
-            android:id="@+id/tvProductQuantity"
+            android:id="@+id/tvCartProductQuantity"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/bg_textview"
-            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
             android:gravity="center|start"
-            android:paddingStart="10dp"
             android:text="1 Kg"
-            android:textColor="#444444"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/cv1"
             app:layout_constraintTop_toBottomOf="@id/tvProdName" />
 
         <TextView
-            android:id="@+id/tvProdPrice"
+            android:id="@+id/tvCartProdPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="10dp"
             android:text="175"
-            android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textColor="#444444"
+            android:textSize="17sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@id/cv1"
-            app:layout_constraintTop_toBottomOf="@id/tvProductQuantity" />
+            app:layout_constraintTop_toBottomOf="@id/tvCartProdPriceMRP" />
 
         <TextView
-            android:id="@+id/tvProdPriceMRP"
+            android:id="@+id/tvCartProdPriceMRP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="15dp"
             android:layout_marginTop="13dp"
             android:text="175"
             android:textSize="16sp"
-            app:layout_constraintStart_toEndOf="@id/tvProdPrice"
-            app:layout_constraintTop_toBottomOf="@id/tvProductQuantity" />
+            app:layout_constraintStart_toEndOf="@id/cv1"
+            app:layout_constraintTop_toBottomOf="@id/tvCartProductQuantity" />
 
         <Button
-            android:id="@+id/btnAddList"
-            android:layout_width="100dp"
+            android:id="@+id/btnDec"
+            android:layout_width="35dp"
             android:layout_height="35dp"
-            android:text="Add"
-            android:textAllCaps="false"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:background="@drawable/btn_add_bg_home"
-            android:textColor="@color/white"
+            android:background="@drawable/bg_inc_dec_btn"
             android:foreground="@drawable/ripple_effect"
+            android:text="-"
+            android:textAllCaps="false"
+            android:textColor="#E25657"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/tvQty"
+            app:layout_constraintTop_toBottomOf="@+id/tvCartProdPriceMRP" />
+
+        <EditText
+            android:id="@+id/tvQty"
+            android:layout_width="40dp"
+            android:enabled="false"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:foreground="@drawable/ripple_effect"
+            android:text="1"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#E25657"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@id/btnInc"
+            app:layout_constraintTop_toBottomOf="@+id/tvCartProdPriceMRP" />
+
+        <Button
+            android:id="@+id/btnInc"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_inc_dec_btn"
+            android:foreground="@drawable/ripple_effect"
+            android:text="+"
+            android:textAllCaps="false"
+            android:textColor="#E25657"
+            android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvProdPriceMRP" />
+            app:layout_constraintTop_toBottomOf="@id/tvCartProdPriceMRP" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

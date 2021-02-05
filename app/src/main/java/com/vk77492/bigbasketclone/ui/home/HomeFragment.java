@@ -1,5 +1,6 @@
 package com.vk77492.bigbasketclone.ui.home;
 
+import android.content.Intent;
 import android.icu.number.Scale;
 import android.net.Uri;
 import android.os.Bundle;
@@ -23,18 +24,27 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
 import com.vk77492.bigbasketclone.BottomNavigation;
+import com.vk77492.bigbasketclone.ProductsListActivity;
 import com.vk77492.bigbasketclone.R;
+import com.vk77492.bigbasketclone.models.product_model.ProductItem;
 import com.vk77492.bigbasketclone.models.product_model.ProductList;
 import com.vk77492.bigbasketclone.recyclerviews.ProductAdapter;
+import com.vk77492.bigbasketclone.sharedpreference.PreferenceHelper;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.InputStream;
 import java.lang.reflect.Type;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.List;
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
 
@@ -44,6 +54,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     private EditText mEtSearch;
     private RecyclerView mRvFruitsVeg;
     private ProductList productList;
+    private ImageView mIvFruits;
+    CardView mCvCleaning;
+
 
     private Runnable showRunnable = new Runnable() {
         @Override
@@ -86,6 +99,11 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         mCarouselView2 = view.findViewById(R.id.carouselView2);
         mRvFruitsVeg = view.findViewById(R.id.rvHomeFruitsVeg);
         setBgThread();
+
+        mIvFruits = view.findViewById(R.id.ivFruits);
+        mCvCleaning = view.findViewById(R.id.cvCleaning);
+        mIvFruits.setOnClickListener(this);
+        mCvCleaning.setOnClickListener(this);
         ImageView mIvTopOne = view.findViewById(R.id.ivTopOne);
         Glide.with(mIvTopOne).load("https://www.bigbasket.com/media/uploads/banner_images/T1_bigdays_EP_1130x400_1stFeb21.jpg").into(mIvTopOne);
         ImageView mIvTopTwo = view.findViewById(R.id.ivTopTwo);
@@ -141,6 +159,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             fetchProductsData();
         }
     };
+
     private void fetchProductsData() {
         try {
             InputStream inputStream = getActivity().getAssets().open("productslist.json");
@@ -162,17 +181,24 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         Gson gson = new Gson();
         Type type = new TypeToken<ProductList>() {
         }.getType();
-        Log.d("TAG", "buildPOJOFromJSON: "+buffer);
+
+
+//        jsonObject.add("names", gson.fromJson(buffer, type));
+//        jsonObject.addProperty("userId", "vinod");
+
+
         productList = gson.fromJson(buffer, type);
         setRecyclerAdapter(productList);
     }
+
     private void setRecyclerAdapter(ProductList responseModel) {
         getActivity().runOnUiThread(new Runnable() {
             @Override
             public void run() {
+                BottomNavigation.productItemList = responseModel.getProduct();
                 ProductAdapter productAdapter = new ProductAdapter(responseModel.getProduct());
                 LinearLayoutManager linearLayoutManager = new
-                        LinearLayoutManager(getActivity(),RecyclerView.HORIZONTAL,false);
+                        LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false);
                 mRvFruitsVeg.setLayoutManager(linearLayoutManager);
                 mRvFruitsVeg.setAdapter(productAdapter);
             }
@@ -181,6 +207,18 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-
+        Intent intent = new Intent(getActivity(), ProductsListActivity.class);
+        switch (v.getId()) {
+            case R.id.ivFruits:
+                intent.putExtra("tag1", "Fruits");
+                intent.putExtra("tag2", "Vegetables");
+                startActivity(intent);
+                break;
+            case R.id.cvCleaning:
+                intent.putExtra("tag1", "Clean");
+                intent.putExtra("tag2", "Detergent");
+                startActivity(intent);
+                break;
+        }
     }
 }

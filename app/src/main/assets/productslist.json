@@ -7,7 +7,7 @@
       "https://www.bigbasket.com/media/uploads/p/l/10000298-3_1-fresho-banganapalli-mango.jpg"
     ],
     "title": "Banganapalli Mango",
-    "category": "Furits",
+    "category": "Fruits",
     "subCategory": "Mango",
     "isOrganic": true,
     "price": 239.0,
@@ -15,7 +15,7 @@
     "discount": "20% OFF",
     "offer": 20,
     "isVeg": true,
-    "suggestedItemsTag": "Furits",
+    "suggestedItemsTag": "Fruits",
     "aboutProduct": "Banganpalli are sourced from Andhra Pradesh and known for their unique sweet and rich taste. They are moderately juicy and aromatic with a maize-yellow colour.",
     "storageAndUses": "These mangoes can either be eaten on their own or pureed to make juices and shakes. They make a perfect dessert as they can be sliced and served with ice-creams and a variety of other desserts too.",
     "isAvailable": true
@@ -28,7 +28,7 @@
         "https://www.bigbasket.com/media/uploads/p/l/40114961-3_4-fresho-papaya-small.jpg"
       ],
       "title": "Papaya - Small",
-      "category": "Furits",
+      "category": "Fruits",
       "subCategory": "Papaya",
       "isOrganic": true,
       "price": 30.0,
@@ -36,7 +36,7 @@
       "discount": "20% OFF",
       "offer": 20,
       "isVeg": true,
-      "suggestedItemsTag": "Furits",
+      "suggestedItemsTag": "Fruits",
       "aboutProduct": "Papayas grow in tropical climates and are also known as papaws or pawpaws. Initially green and somewhat bitter in taste, papayas are butter-yellow when fully ripe and shaped like a pear. Their pale-orange flesh has dozens of small, black, sticky seeds at the center, similar to a melon.",
       "storageAndUses": "Raw papaya salad is one of the most popular dishes not just in Southeast Asia but across the globe too. The julienned flesh tossed with lemon juice, chillies, peanuts and fresh herbs provide a delicious medley of flavours, and it makes a great option for a refreshing and light lunch.",
       "isAvailable": true
@@ -80,6 +80,68 @@
       "suggestedItemsTag": "Vegetables",
       "aboutProduct": "A popular sweet-tasting root vegetable, Carrots are narrow and cone shaped. They have thick, fleshy, deeply colored root, which grows underground, and feathery green leaves that emerge above the ground. While these greens are fresh tasting and slightly bitter, the carrot roots are crunchy textured with a sweet and minty aromatic taste. Fresho brings you the flavour and richness of the finest bright orange, crispy and juicy carrots.",
       "storageAndUses": "Refrigerate carrots in a mesh bag. Alternatively to retain freshness and for more longevity, trim off the greens and put whole carrots in a container of water and refrigerate. With this method, they stay nice and crunchy. If the water starts to look cloudy, change it with fresh water. Stored this way, carrots can last for even a month with no ill effects and dont wilt easily.",
+      "isAvailable": true
+    },
+    {
+      "id": 5,
+      "images": [
+        "https://www.bigbasket.com/media/uploads/p/l/228623_26-surf-excel-matic-front-load-detergent-powder.jpg",
+        "https://www.bigbasket.com/media/uploads/p/l/228623-2_5-surf-excel-matic-front-load-detergent-powder.jpg",
+        "https://www.bigbasket.com/media/uploads/p/l/228623-3_4-surf-excel-matic-front-load-detergent-powder.jpg",
+        "https://www.bigbasket.com/media/uploads/p/l/228623-4_4-surf-excel-matic-front-load-detergent-powder.jpg"
+      ],
+      "title": "Surf Excel Matic Powder",
+      "category": "Cleaning",
+      "subCategory": "Detergent",
+      "isOrganic": false,
+      "price": 360.0,
+      "attribute": "2 Kg",
+      "discount": "32% OFF",
+      "offer": 32,
+      "isVeg": false,
+      "suggestedItemsTag": "Cleaning",
+      "aboutProduct": "Presenting, Surf excel matic front load the machine specialist laundry detergent from the Surf excel matic family that gives you 100% Tough Stain Removal in Machines. Surf excel matic front load is specially designed to work in high water level environment (40 liters) of front load washing machines. Its hand rub action power penetrates clothes and removes tough stains in the washing machine itself .This means no more soaking or scrubbing and saves up the time and effort you put behind everyday laundry. Being a washing machine specialist detergent, it dissolves completely in machine and ensure its leaves no residue on your clothes or your machine. Surf excel is Indias no.1 matic detergent brand and is recommended by leading washing machine manufacturers such as Samsung, Videocon, Godrej, Panasonic, Electrolux, Siemens, Bosch, IFB & Kelvinator. Moreover, Surf excel matic is value for money as all you need is 1 scoop (60 gms) of the detergent powder for regular load of clothes, however for heavily soiled clothes we recommend 1 n half Scoop (90gms) of the detergent powder. Now, just dump your clothes in your front load washing machine without soaking or scrubbing them and get 100% Tough Stain Removal in your machine.",
+      "storageAndUses": "The Surf Excel Matic Front Load Detergent is ideal for all kinds of garments and can be used for a front load washing machine. It is value for money as all you need is 1 scoop of detergent for regular load of clothes. Just dump your clothes in a washing machine without soaking or scrubbing and get 100% Tough Stain Removal",
+      "isAvailable": true
+    },
+    {
+      "id": 6,
+      "images": [
+        "https://www.bigbasket.com/media/uploads/p/xxl/298258_22-vim-dishwash-liquid-gel-lemon.jpg",
+        "https://www.bigbasket.com/media/uploads/p/l/298258-3_9-vim-dishwash-liquid-gel-lemon.jpg"
+      ],
+      "title": "Vim Dishwash Liquid Gel - Lemon",
+      "category": "Cleaning",
+      "subCategory": "Dishwash",
+      "isOrganic": false,
+      "price": 315.0,
+      "attribute": "1.8 L",
+      "discount": "13% OFF",
+      "offer": 13,
+      "isVeg": false,
+      "suggestedItemsTag": "Cleaning",
+      "aboutProduct": "Vim is the No.1 dishwashing brand in India. Vim’s Dishwash Liquid Gel is a concentrated gel containing the power of 100 lemons(power refers to the cleaning benefits of lemons). It cleans the utensils deeply and unlike dishwash bars, it does not leave any powdery white layer of residue behind on them. It provides great value for money as only one spoon of Vim Liquid Dishwash Gel is enough to clean one sink-full of dirty utensils(as per the independent lab test conducted). Vim Liquid Dishwash Gel also helps you to remove the stubborn malodours from your tiffin boxes. It provides a pleasant cleaning experience and gives a refreshing lemon fragrance during dishwash. Its pH neutral formula is soft on hands compared to other bars. It can safely be used to clean delicate utensils and all kinds of expensive crockery including the non-stick cookware. It does not leave any scratches on the surfaces and keeps the utensils looking new. It is extremely convenient to use. Just take a spoonful of Vim Dishwash Liquid Gel, mix it in a bowl of water and use the mixture to wash an entire sink-full load of dishes. Vim Dishwash Liquid Gel is available in different sizes and packaging format in the market which includes bottles and pouch packs\n\nOne spoon of Vim Liquid Dishwash Gel is enough to clean one sink-full of dirty utensils.\nIt has a superior fragrance that lasts long after rinsing utensils.\nIt is soft on hands.\nIt can safely be used to clean expensive crockery and cookware as it does not leave scratches.\nVim Dishwash Liquid Gel is available in different sizes and packaging in the market which include bottles and pouch packs",
+      "storageAndUses": "Take 1 teaspoon (3.75 ml) of Vim gel.\nMix it in 1 (40 ml) bowl of water.\nFor cooking vessels, use the green side of the sponge scrubber and for dishes, tiffins, other utensils use the yellow side of the scrubber by dipping them in the mixture.\nClean to get a sink full of refreshingly fragrant and sparkling vessels.",
+      "isAvailable": true
+    },
+    {
+      "id": 7,
+      "images": [
+        "https://www.bigbasket.com/media/uploads/p/l/40009983_13-britannia-gobbles-fruity-fun-cake.jpg",
+        "https://www.bigbasket.com/media/uploads/p/l/40009983-2_12-britannia-gobbles-fruity-fun-cake.jpg"
+      ],
+      "title": "Britannia Gobbles Fruity Fun Cake",
+      "category": "Bakery",
+      "subCategory": "Cakes",
+      "isOrganic": false,
+      "price": 38.0,
+      "attribute": "120g / 1 pc",
+      "discount": "20% OFF",
+      "offer": 20,
+      "isVeg": false,
+      "suggestedItemsTag": "Bakery",
+      "aboutProduct": "Britannia Fruit Cake has soft and delicious cake slices with the goodness of little fruit bits, milk and eggs. With the best all-natural ingredients, each bite gives mouth-watering flavour. Britannia Cakes have soft spongy and fluffy slices that deliciously melts in your mouth. Believing in delivering fresh and healthy products, Britannia India manufactures some of India's favourite cakes.",
+      "storageAndUses": "Enjoy the delicious and mouth-watering flavours in every slice of ready to eat Britannia Cakes.\n",
       "isAvailable": true
     }]
 }

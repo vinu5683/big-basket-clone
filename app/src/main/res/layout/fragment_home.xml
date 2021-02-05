@@ -92,9 +92,7 @@
                     android:src="@drawable/category_caption_bar" />
             </androidx.cardview.widget.CardView>
 
-            <LinearLayout
-                style="@style/linearLayoutStyle"
-                >
+            <LinearLayout style="@style/linearLayoutStyle">
 
                 <androidx.cardview.widget.CardView style="@style/homeCardView">
 
@@ -106,7 +104,9 @@
                         android:src="@drawable/fruits" />
                 </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView style="@style/homeCardView">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvCleaning"
+                    style="@style/homeCardView">
 
                     <ImageView
                         android:id="@+id/ivCleaning"
@@ -212,6 +212,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView style="@style/homeCardView">
+
                     <ImageView
                         android:id="@+id/iv22"
                         android:layout_width="match_parent"
@@ -234,15 +235,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
                 android:background="#c4c4c4"
-                >
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rvHomeFruitsVeg"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    />
+                    android:layout_height="wrap_content" />
             </LinearLayout>
 
             <androidx.cardview.widget.CardView
@@ -267,8 +267,7 @@
                     android:src="@drawable/fruits_caption_bar" />
             </androidx.cardview.widget.CardView>
 
-            <LinearLayout
-                style="@style/linearLayoutStyle">
+            <LinearLayout style="@style/linearLayoutStyle">
 
                 <androidx.cardview.widget.CardView style="@style/homeCardView">
 
@@ -318,8 +317,7 @@
                 app:fillColor="@color/white"
                 app:pageColor="@color/black"
                 app:radius="5dp"
-                app:slideInterval="3000"
-                />
+                app:slideInterval="3000" />
 
             <androidx.cardview.widget.CardView
                 style="@style/card2Style"
