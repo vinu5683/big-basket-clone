@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.BigBasketClone" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.BigBasketClone" parent="Theme.Design.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/big_basket_official</item>
         <item name="colorPrimaryVariant">@color/big_basket_official_dark</item>
