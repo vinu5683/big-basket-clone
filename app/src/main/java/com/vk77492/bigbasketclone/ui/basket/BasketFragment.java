@@ -1,5 +1,6 @@
 package com.vk77492.bigbasketclone.ui.basket;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -19,6 +20,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.vk77492.bigbasketclone.BottomNavigation;
+import com.vk77492.bigbasketclone.CheckoutActivity;
 import com.vk77492.bigbasketclone.R;
 import com.vk77492.bigbasketclone.RemoveItemListener;
 import com.vk77492.bigbasketclone.UpdatePrice;
@@ -81,7 +83,6 @@ public class BasketFragment extends Fragment implements RemoveItemListener, Upda
             llEmptyBasket.setVisibility(View.VISIBLE);
         } else
             llEmptyBasket.setVisibility(View.GONE);
-
     }
 
     private void initViewsListeners(View view) {
@@ -97,6 +98,12 @@ public class BasketFragment extends Fragment implements RemoveItemListener, Upda
         btnCheckout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (totPrice != 0) {
+                    Intent intent = new Intent(getActivity(), CheckoutActivity.class);
+                    intent.putExtra("cost", totPrice + "");
+                    startActivity(intent);
+                } else
+                    Toast.makeText(getContext(), "Sorry Cart Is Empty", Toast.LENGTH_SHORT).show();
             }
         });
     }

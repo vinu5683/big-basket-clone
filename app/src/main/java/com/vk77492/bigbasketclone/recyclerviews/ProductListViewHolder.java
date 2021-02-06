@@ -69,12 +69,11 @@ public class ProductListViewHolder extends RecyclerView.ViewHolder {
                     if (!PreferenceHelper.readStringFromPreference(
                             BottomNavigation.PREF_USER_CART_KEY).equals("")) {
                         boolean canIAddIt = true;
-                        Log.d("TAG", "onClick: "+string);
+                        Log.d("TAG", "onClick: " + string);
                         String[] cart = string.split(" ");
                         for (int i = 0; i < cart.length; i++) {
-                            Log.d("TAG", "cart item id " + cart[i]);
                             if (Integer.parseInt(cart[i]) == productItem.getId()) {
-                                Toast.makeText(v.getContext(), "Item Already in cart" + stringBuffer.toString(),
+                                Toast.makeText(v.getContext(), "Item Already in cart",
                                         Toast.LENGTH_SHORT).show();
                                 canIAddIt = false;
                                 break;
@@ -84,7 +83,7 @@ public class ProductListViewHolder extends RecyclerView.ViewHolder {
                             stringBuffer.append(string).append(productItem.getId()).append(" ");
                             PreferenceHelper.writeStringToPreference(BottomNavigation.PREF_USER_CART_KEY,
                                     stringBuffer.toString());
-                            Toast.makeText(v.getContext(), "Item added to Cart" + stringBuffer.toString(),
+                            Toast.makeText(v.getContext(), "Item added to Cart",
                                     Toast.LENGTH_SHORT).show();
                         }
                     } else {
