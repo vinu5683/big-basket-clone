@@ -19,4 +19,5 @@
 
     <!--colros for card-->
     <color name="whiteCardColor">#fff</color>
+    <color name="official_text_color">#444444</color>
 </resources>

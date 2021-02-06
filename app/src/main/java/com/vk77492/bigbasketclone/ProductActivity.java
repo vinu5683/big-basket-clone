@@ -26,7 +26,7 @@ public class ProductActivity extends AppCompatActivity implements View.OnClickLi
     private ImageView mIvMain, iv0, iv1, iv2, iv3;
     private ProductItem item;
     private Button addToBasket;
-    private TextView tvTitle, tvProductPrice, tvProductMRP, tvProductDiscount, tvAbout, tvUses;
+    private TextView tvTitle, tvProductPrice, tvProductMRP, tvProductDiscount, tvAbout, tvUses, tvBackProdActivity;
     private List<ProductItem> productItems = BottomNavigation.productItemList;
     private int prodId;
     private List<ProductItem> resultProductItems;
@@ -71,11 +71,13 @@ public class ProductActivity extends AppCompatActivity implements View.OnClickLi
         tvProductDiscount = findViewById(R.id.tvProductDiscount);
         tvAbout = findViewById(R.id.tvAbout);
         tvUses = findViewById(R.id.tvUses);
+        tvBackProdActivity = findViewById(R.id.tvBackProdActivity);
 
         iv0.setOnClickListener(this);
         iv1.setOnClickListener(this);
         iv2.setOnClickListener(this);
         iv3.setOnClickListener(this);
+        tvBackProdActivity.setOnClickListener(this);
 
         addToBasket.setOnClickListener(this);
 
@@ -152,6 +154,9 @@ public class ProductActivity extends AppCompatActivity implements View.OnClickLi
                 break;
             case R.id.addToBasket:
                 addItemToCart();
+                break;
+            case R.id.tvBackProdActivity:
+                finish();
                 break;
 
 
