@@ -1,9 +1,9 @@
 # big-basket-clone
 
 # Used
-1.Java,
-2.Kotlin,
-3.MVVM
+1.Java\n
+2.Kotlin\n
+3.MVVM\n
 4.Local Shared Preferences
 
 ![](https://raw.githubusercontent.com/vinu5683/vinodkumar/master/assets/img/portfolio/bigbasket/bb-home.png)
