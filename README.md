@@ -1,4 +1,5 @@
 # big-basket-clone
+The Big-Basket Clone is an online grocery delivery app, where one can order the grocery in the app and it will get delivered to the respective address provided in the app.
 
 # Used
 1.Java<br />
